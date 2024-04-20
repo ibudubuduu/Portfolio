@@ -1,0 +1,326 @@
+body {
+  height: 100dvh;
+  /* background: burlywood; */
+    justify-content: center;
+    background-image: linear-gradient(62deg, #872341 0%, #BE3144  50%, #F05941 100%);
+    background-size: 500% 500%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%; 
+  }
+}
+
+
+.typewriter h1 {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.10em; /* Adjust as needed */
+  animation: typing 4.5s steps(50, end); /*Specify iteration count as 1 */
+}
+
+.typewriter
+{
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Adjust as needed */
+}
+
+/* , blink-caret 0.5s step-end 1 */
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Adjust to the width of your text */
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+.About_me{
+  text-align: left;
+  font-family: monospace;
+  font-size:xx-large;
+  font-weight: bolder;
+  margin-left: 3%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 5s steps(75, end);
+}
+
+.About_me_para
+{
+  text-align: justify;
+  font-family: monospace;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+
+img.ibu
+{
+  padding: 0;
+  margin : 1%;
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin-right: 5%;
+  opacity: 0; /* Initially hide the image */
+  position: relative; /* Required for animation positioning */
+  animation: floatUp 2s ease-in-out forwards; /* Define animation */
+  display: flex;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100px); /* Start from 100px below */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* Make the image visible at the end */
+  }
+}
+
+.horizontal-line {
+  border: 1px solid black; /* Set border to create the line */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+
+.clear
+{
+  clear: both;
+}
+
+ /* #backgroundVideo {
+  position: fixed;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the video behind other content  
+} */
+
+.Skills
+{
+  text-align: justify;
+  font-family: monospace;
+  font-size:xx-large;
+  font-weight: bolder;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 5s steps(75, end);
+}
+
+.skill_list
+{
+  text-align: justify;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+
+.Education
+{
+ 
+    text-align: center;
+    font-family: monospace;
+    padding-left: 15px;
+    font-size:xx-large;
+    font-weight: bolder;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: 0.15em solid orange; The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* animation: typing 5s steps(75, end); */
+}
+
+img.ibu2
+{
+  padding: 5px;
+  margin : 1%;
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin-left: 5%;
+  opacity: 0; /* Initially hide the image */
+  position: relative; /* Required for animation positioning */
+  animation: floatUp 2s ease-in-out forwards; /* Define animation */
+  display: flex;
+}
+
+header {
+  background-color: transparent; /* Set background color for the entire header */
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  header nav ul li {
+  display: inline;
+  }
+  
+  header nav ul li a {
+  padding: 0px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  }
+  
+  header nav ul li a:hover {
+  background-color: #2b0e38;
+  }
+  
+
+  .Edu_para
+  {
+  text-align: justify;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 3%;
+  vertical-align: middle;
+  }
+
+.indented-paragraph {
+    text-indent: 20px; /* Adjust the value as needed */
+    font-size: large;
+}
+
+.achievements
+{
+  text-align: center;
+  font-family: monospace;
+  padding-left: 100px;
+  width: fit-content;
+  font-size:xx-large;
+  font-weight: bolder;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* animation: typing 5s steps(75, end); */
+}
+
+.ach_list
+{
+  font-size: x-large;
+  text-align: left;
+  font-family: monospace;
+  font-weight: bold;
+  padding-left: 45px;
+}
+
+
+
+footer{
+  background: transparent;
+  padding-top: 50px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.container{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content{
+  width: 50%;
+}
+h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width:190px;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list{
+  padding: 0;
+  color: white;
+}
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+}
+.list li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition-duration: .5s;
+}
+.list li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: white;
+}
+
+
